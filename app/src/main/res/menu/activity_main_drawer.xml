@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/ic_class_details"
+            android:title="@string/menu_course_list" />
+        <item
+            android:id="@+id/nav_exams"
+            android:icon="@drawable/baseline_computer_24"
+            android:title="@string/exams" />
+        <item
+            android:id="@+id/nav_assignments"
+            android:icon="@drawable/ic_assignments"
+            android:title="@string/assignments" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/baseline_check_box_24"
+            android:title="@string/to_do_list" />
+
+
+
+    </group>
+</menu>

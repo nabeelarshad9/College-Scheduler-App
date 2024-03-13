@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/text_todolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#D5DBE5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search status, course or due date..."
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filter"
+        app:layout_constraintTop_toBottomOf="@id/filter"
+        android:layout_margin="8dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <ImageButton
+        android:id="@+id/btnStatus"
+        android:layout_width="123dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sort_button_shape"
+        android:elevation="47dp"
+        android:src="@drawable/ic_sort_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_below="@id/recycler"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCourse"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/sort_button_shape"
+        android:elevation="47dp"
+        android:src="@drawable/ic_sort_course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnDuedate"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/sort_button_shape"
+        android:elevation="47dp"
+        android:src="@drawable/ic_sort_due_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTaskname"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sort_button_shape"
+        android:elevation="47dp"
+        android:src="@drawable/ic_sort_task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/add_button_shape"
+        android:elevation="17dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnTaskname" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

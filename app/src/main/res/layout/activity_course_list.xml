@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.courses.CourseListActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_courses"
+        app:title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView_back"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+            <ImageView
+                android:id="@+id/imageView_save"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_done_24"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_instructor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Instructor: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Section: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Meeting Times: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date/Time: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editText_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location: "
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#76777B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</LinearLayout>
